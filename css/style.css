@@ -1,3 +1,7 @@
+body{
+    font-family: 'Acme', sans-serif;
+}
+
 /* width */
 *::-webkit-scrollbar {
     width: 7px;
@@ -5,12 +9,14 @@
   
   /* Track */
 *::-webkit-scrollbar-track {
-    background-color: #7977e9;
+    background-color: #7977e97a;
+    border-radius: 10px;
 }
    
   /* Handle */
 *::-webkit-scrollbar-thumb {
     background: #5c46c0; 
+    border-radius: 10px;
 }
   
   /* Handle on hover */
@@ -379,7 +385,6 @@
     margin: 30px 0 30px 40px;
     width: 90%;
     height: 450px;
-    background-color: yellowgreen;
     display: flex;
     justify-content: space-between;
 }
@@ -400,12 +405,77 @@
     height: 200px;
     background-color: #2a224b;
     border-radius: 8px;
+    position: relative;
+}
+.fw-p{
+    color: #fff;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.p-playing,.p-recently{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #86849b;
+}
+.p-active,.recently-cont{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.active-player{
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    border: 1px solid #2b7519;
+}
+.recently-played{
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    border: 1px solid #696767;
 }
 .achievements{
     width: 100%;
     height: 240px;
     background-color: #2a224b;
     border-radius: 8px;
+    position: relative;
+}
+.ach-p{
+    color: #fff;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.cup-cont{
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+}
+.cup-icon{
+    color: #8c86c2;
+    margin-right: 15px;
+}
+.ach-pro{
+    color: #8c86c2;
+}
+.ach-p-part{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #8c86c2;
+}
+.w-load-ach{
+    width: 285px;
+    height: 10px;
+    background-color: #322a5a;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 12px;
+}
+.ach-part{
+    background-color: #4d42a8;
+    width: 73%;
+    height: 100%;
+    border-radius: 12px;
 }
 .footer{
     width: 100%;
