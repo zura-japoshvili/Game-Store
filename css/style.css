@@ -96,34 +96,36 @@ body{
     width: 50px;
     height: 50px;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 .active-icon{
     color: #74dec2;
     position: absolute;
     right: 3px;
-    font-size: 13px;
+    font-size: 11px;
     top: 0;
 }
 .offline-icon{
     position: absolute;
     right: 3px;
-    font-size: 13px;
+    font-size: 11px;
     top: 0;
     color: #be3d3d;
     visibility: hidden;
 }
 .profile-img{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50px;
-    border: 2px solid #7c71c0;
+    border: 1px solid #7c71c0;
 }
 .active-cont{
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 0;
-    left: 50px;
+    top: 0px;
+    left: 42px;
     cursor: pointer;
 }
 .online{
