@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="../img/site-icon/70e902945f52904d0fdd033d7500877d-removebg-preview.png"
+      sizes="16x16"
+    />
+    <title>Game Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="bg">
+      <div class="content">
+        <header class="header">
+          <nav class="navigation">
+            <ul class="nav-ul">
+              <li class="nav-li"><a class="nav-a" href="#">STORE</a></li>
+              <li class="nav-li">
+                <a class="nav-a" href="#">UNREAL ENGINE</a>
+              </li>
+              <li class="nav-li"><a class="nav-a" href="#">COMMUNITY</a></li>
+              <li class="nav-li"><a class="nav-a" href="#">FRIENDS</a></li>
+              <li class="nav-li">
+                <a class="nav-active" href="#">LIBRARY</a>
+              </li>
+            </ul>
+            <div class="nav-icons">
+              <i class="fas fa-heart heart-icon"></i>
+              <i class="fas fa-shopping-cart cart-icon"></i>
+              <i class="fas fa-comment-alt chat-icon"></i>
+              <a class="profile-name" href="#">Japoshv1l1</a>
+              <div class="profile-img-cont">
+                <img
+                  class="profile-img"
+                  src="../img/profile_image"
+                  alt="profile-img"
+                  onmouseover="mouseOverFunc()"
+                  onmouseout="mouseOutFunc()"
+                />
+                <i
+                  class="fas fa-circle active-icon"
+                  id="active-icon"
+                  onmouseover="mouseOverFunc()"
+                  onmouseout="mouseOutFunc()"
+                ></i>
+                <i
+                  class="fas fa-minus-circle offline-icon"
+                  id="offline-icon"
+                  nmouseover="mouseOverFunc()"
+                  onmouseout="mouseOutFunc()"
+                ></i>
+                <div
+                  class="active-cont"
+                  id="active-cont"
+                  onmouseover="mouseOverFunc()"
+                  onmouseout="mouseOutFunc()"
+                >
+                  <p class="online" onclick="activeClickFunc('active')">
+                    Online
+                  </p>
+                  <p class="offline" onclick="activeClickFunc('offline')">
+                    Offline
+                  </p>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <section class="search-sec">
+          <form class="search-from">
+            <input
+              type="search"
+              name="search"
+              id="search"
+              class="search"
+              placeholder="Searching games..."
+            />
+            <i class="fas fa-search search-icon"></i>
+          </form>
+          <a class="act-key" href="#">ACTIVATE KEY</a>
+        </section>
+        <div class="main-content">
+          <aside class="aside-cont">
+            <div class="fav-games">
+              <div class="fg-cont">
+                <h4 class="f-g">
+                  <i class="fas fa-star aside-icon"></i
+                  >&emsp;Favorite&emsp;<span class="fg-numbers">3</span
+                  ><i class="fas fa-sort-up arrow" id="arrow-fg"></i>
+                </h4>
+                <ul class="fg-list" id="fg-list">
+                  <li class="fg-li" id="c-2077-fg">
+                    <img
+                      class="game-icons"
+                      src="../img/game_icons/cyberpunk2077.webp"
+                      alt="cyberpunk2077"
+                    />
+                    <p class="game-name">Cyberpunk 2077</p>
+                  </li>
+                  <li class="fg-li">
+                    <img
+                      class="game-icons"
+                      src="../img/game_icons/Red_Dead_Redemption_II.jpg"
+                      alt="RDR2"
+                    />
+                    <p class="game-name">Red Dead Redemption 2</p>
+                  </li>
+                  <li class="fg-li">
+                    <img
+                      class="game-icons"
+                      src="../img/game_icons/Witcher_3.jpg"
+                      alt="The Witcher 3"
+                    />
+                    <p class="game-name">The Witcher 3: Wild Hunt</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="ag-cont">
+                <h4 class="all-games">
+                  <i class="fas fa-list aside-icon"></i>&emsp;All
+                  Games&emsp;<span class="all-numbers">10</span
+                  ><i class="fas fa-sort-up arrow" id="arrow-ag"></i>
+                </h4>
+                <ul class="ag-list" id="ag-list">
+                  <li class="ag-li">
+                    <img
+                      class="game-icons"
+                      src="../img/game_icons/cyberpunk2077.webp"
+                      alt="cyberpunk2077"
+                    />
+                    <p class="game-name">Cyberpunk 2077</p>
+                  </li>
+                  <li class="ag-li">
+                    <img
+                      class="game-icons"
+                      src="../img/game_icons/Red_Dead_Redemption_II.jpg"
+                      alt="RDR2"
+                    />
+                    <p class="game-name">Red Dead Redemption 2</p>
+                  </li>
+                  <li class="ag-li">
+                    <img
+                      class="game-icons"
+                      src="../img/game_icons/Witcher_3.jpg"
+                      alt="The Witcher 3"
+                    />
+                    <p class="game-name">The Witcher 3: Wild Hunt</p>
+                  </li>
+                  <li class="ag-li">
+                    <img
+                      class="game-icons"
+                      src="../img/game_icons/Rocket_League_coverart.jpg"
+                      alt="Rocket League"
+                    />
+                    <p class="game-name">Rocket League</p>
+                  </li>
+                  <li class="ag-li">
+                    <img
+                      class="game-icons"
+                      src="../img/game_icons/assassins-creed-brotherhood-cover.jpg"
+                      alt="AC creed "
+                    />
+                    <p class="game-name">AC Brotherhood</p>
+                  </li>
+                  <li class="ag-li">
+                    <img
+                      class="game-icons"
+                      src="../img/game_icons/tom-clancys-rainbow-six-siege-cover.jpg"
+                      alt="Six Siege"
+                    />
+                    <p class="game-name">Rainbow Six Siege</p>
+                  </li>
+                  <li class="ag-li">
+                    <img
+                      class="game-icons"
+                      src="../img/game_icons/Prototype.webp"
+                      alt="Prototype"
+                    />
+                    <p class="game-name">PROTOTYPE</p>
+                  </li>
+                  <li class="ag-li">
+                    <img
+                      class="game-icons"
+                      src="../img/game_icons/Portal2cover.jpg"
+                      alt="P2"
+                    />
+                    <p class="game-name">Portal 2</p>
+                  </li>
+                  <li class="ag-li">
+                    <img
+                      class="game-icons"
+                      src="../img/game_icons/Garry's_Mod_logo.svg"
+                      alt="Garry's Mod"
+                    />
+                    <p class="game-name">Garry's Mod</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </aside>
+          <div class="game-content">
+            <div class="about-game">
+              <img
+                class="game-mp"
+                src="../img/game_icons/cyberpunk2077.webp"
+                alt="cyberpunk2077"
+              />
+              <div class="game-info">
+                <h4 class="ab-g-name">Cyberpunk 2077</h4>
+                <p class="played-hours">
+                  You've Played:<span class="hours">&emsp;27h&emsp;19min</span>
+                </p>
+                <p class="last-played">
+                  Last Played:<span class="lp-day">&emsp;Today</span>
+                </p>
+                <div class="play-cont">
+                  <a class="play-button" href="#"
+                    ><i class="fas fa-play"></i>&nbsp;Play</a
+                  >
+                  <i class="fas fa-cog cog-icon"></i>
+                </div>
+              </div>
+            </div>
+            <div class="game-nav">
+              <ul class="gn-ul">
+                <li class="gn-li">Store Page</li>
+                <li class="gn-li">News</li>
+                <li class="gn-li">Game Info</li>
+                <li class="gn-li">Reviews</li>
+                <li class="gn-li">Community</li>
+                <li class="gn-li">Support</li>
+              </ul>
+            </div>
+            <div class="ab-g-content">
+              <div class="game-slides"></div>
+              <div class="g-fa-cont">
+                <div class="friends-wp">
+                  <h5 class="fw-p">Friends Who Play</h5>
+                  <p class="p-playing">Playing</p>
+                  <div class="p-active">
+                    <img
+                      class="active-player"
+                      src="../img/player-img/batoni-vaso.jpg"
+                      alt="player"
+                    />
+                    <img
+                      class="active-player"
+                      src="../img/player-img/marksheideri.jpg"
+                      alt="player"
+                    />
+                    <img
+                      class="active-player"
+                      src="../img/player-img/soso.jpeg"
+                      alt="player"
+                    />
+                    <img
+                      class="active-player"
+                      src="../img/player-img/zazaevichi.jpeg"
+                      alt="player"
+                    />
+                  </div>
+                  <p class="p-recently">Played Recently</p>
+                  <div class="recently-cont">
+                    <img
+                      class="recently-played"
+                      src="../img/player-img/pipinia.jpg"
+                      alt="recently"
+                    />
+                    <img
+                      class="recently-played"
+                      src="../img/player-img/pliusminus.jpg"
+                      alt="recently"
+                    />
+                    <img
+                      class="recently-played"
+                      src="../img/player-img/q-tamari.jpg"
+                      alt="recently"
+                    />
+                    <img
+                      class="recently-played"
+                      src="../img/player-img/qmari.jpg"
+                      alt="recently"
+                    />
+                    <img
+                      class="recently-played"
+                      src="../img/player-img/ushvebulebo.jpg"
+                      alt="recently"
+                    />
+                    <img
+                      class="recently-played"
+                      src="../img/player-img/xatiani-qali.jpg"
+                      alt="recently"
+                    />
+                    <img
+                      class="recently-played"
+                      src="../img/player-img/abi-glukoza.jpeg"
+                      alt="recently"
+                    />
+                  </div>
+                </div>
+                <div class="achievements">
+                  <h5 class="ach-p">Achievements Progress</h5>
+                  <p class="ach-p-part">73/100</p>
+                  <div class="cup-cont">
+                    <i class="fas fa-trophy cup-icon"></i>
+                    <p class="ach-pro">73%</p>
+                  </div>
+                  <div class="w-load-ach">
+                    <div class="ach-part"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <p class="copyright">&copy;&nbsp;Zura Japoshvili</p>
+          <div class="footer-icons">
+            <a href="#"><i class="fab fa-github github-icon"></i></a>
+            <a href="#"><i class="fab fa-linkedin linkedin-icon"></i></a>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="../js/L_script.js"></script>
+  </body>
+</html>
