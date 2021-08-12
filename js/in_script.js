@@ -2,6 +2,9 @@ let sign_in = document.getElementById("sign-in");
 let sign_in_cont = document.getElementById("sign-in-cont");
 let sign_up = document.getElementById("sign-up");
 let sign_up_cont = document.getElementById("sign-up-cont");
+let burger_icon = document.getElementById("burger-icon");
+let active_burger = document.getElementById("active-burger");
+let side_nav = document.getElementById("side-nav");
 sign_in.addEventListener("click", function () {
   sign_in_cont.classList.toggle("sign-in-active");
   sign_up_cont.classList.remove("sign-up-cont-active");
@@ -13,6 +16,14 @@ sign_up.addEventListener("click", function () {
 let x_exit = document.getElementById("x-for-exit");
 x_exit.addEventListener("click", function () {
   sign_up_cont.classList.remove("sign-up-cont-active");
+});
+burger_icon.addEventListener("click", function(){
+  side_nav.classList.add("side-nav-active");
+  burger_icon.style.visibility = "hidden";
+});
+active_burger.addEventListener("click", function(){
+  side_nav.classList.remove("side-nav-active");
+  burger_icon.style.visibility = "visible";
 });
 
 $(".autoplay").slick({

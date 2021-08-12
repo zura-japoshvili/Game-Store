@@ -28,6 +28,61 @@ body {
   height: 70px;
   width: 100%;
   position: relative;
+  display: flex;
+  align-items: center;
+}
+.burger-icon{
+  font-size: 30px;
+  color: #4019a1;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  cursor: pointer;
+  display: none !important;
+  z-index: 10;
+}
+.side-nav{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  width: 200px;
+  height: 100vh;
+  background-color: #534d7cdc;
+  position: absolute;
+  left: 0;
+  z-index: 3;
+  transition-duration: 0.5s;
+  transform: translateX(-100%);
+}
+.sn-ul{
+  margin-top: 40px;
+  margin-left: 20px;
+}
+.sn-li{
+  margin-top: 20px;
+}
+.sn-a{
+  font-weight: bolder;
+  color: #e2dde7;
+  transition-duration: 0.6s;
+}
+.sn-a:hover{
+  color: #10062c;
+}
+.side-nav-active{
+  transform: translateX(0);
+}
+.active-burger{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 22px;
+  color: #c56767;
+  transition-duration: 0.5s;
+}
+.active-burger:hover{
+  color: #a04444;
+  transform: scale(1.2);
 }
 .profile-empty-img-cont {
   width: 40px;
@@ -250,7 +305,10 @@ body {
   height: 10%;
   width: 100%;
   position: relative;
+  display: flex;
+  align-items: center;
 }
+
 .navigation {
   display: flex;
   align-items: center;
@@ -782,5 +840,29 @@ body {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+
+@media  screen and (max-width: 960px) {
+  .nav-ul{
+    display: none;
+  }
+  .auth-cont{
+    position: absolute;
+    right: 100px;
+  }
+  .burger-icon{
+    display: flex !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .auth-cont{
+    position: relative;
+    right: 0px;
+  }
+  .footer-icons{
+    right: 20px;
+    font-size: 20px;
   }
 }
