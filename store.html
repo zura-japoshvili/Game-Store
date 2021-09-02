@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="../img/site-icon/70e902945f52904d0fdd033d7500877d-removebg-preview.png"
+      sizes="16x16"
+    />
+    <title>Game Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link
+      href="https://kenwheeler.github.io/slick/slick/slick-theme.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+      <div class="store-content">
+        <div class="side-nav" id="side-nav">
+          <i class="fas fa-stream active-burger" id="active-burger"></i>
+          <ul class="sn-ul">
+            <li class="sn-li"><a class="sn-a" href="#">STORE</a></li>
+            <li class="sn-li">
+              <a class="sn-a" href="#">UNREAL ENGINE</a>
+            </li>
+            <li class="sn-li"><a class="sn-a" href="#">COMMUNITY</a></li>
+            <li class="sn-li"><a class="sn-a" href="#">FRIENDS</a></li>
+            <li class="sn-li">
+              <a class="sn-a" href="library/cyberpunk_2077.html">LIBRARY</a>
+            </li>
+          </ul>
+        </div>
+        <header class="header">
+          <nav class="navigation">
+            <i class="fas fa-bars burger-icon-l"></i>
+            <ul class="nav-ul">
+              <li class="nav-li"><a class="nav-active" href="#">STORE</a></li>
+              <li class="nav-li">
+                <a class="nav-a" href="#">UNREAL ENGINE</a>
+              </li>
+              <li class="nav-li"><a class="nav-a" href="#">COMMUNITY</a></li>
+              <li class="nav-li"><a class="nav-a" href="#">FRIENDS</a></li>
+              <li class="nav-li">
+                <a class="nav-a" href="#">LIBRARY</a>
+              </li>
+            </ul>
+            <div class="nav-icons">
+              <i class="fas fa-heart heart-icon"></i>
+              <i class="fas fa-shopping-cart cart-icon"></i>
+              <i class="fas fa-comment-alt chat-icon"></i>
+              <a class="profile-name" href="#">Japoshv1l1</a>
+              <div class="profile-img-cont">
+                <img
+                  class="profile-img"
+                  src="../img/profile_image"
+                  alt="profile-img"
+                  onmouseover="mouseOverFunc()"
+                  onmouseout="mouseOutFunc()"
+                />
+                <i
+                  class="fas fa-circle active-icon"
+                  id="active-icon"
+                  onmouseover="mouseOverFunc()"
+                  onmouseout="mouseOutFunc()"
+                ></i>
+                <i
+                  class="fas fa-minus-circle offline-icon"
+                  id="offline-icon"
+                  nmouseover="mouseOverFunc()"
+                  onmouseout="mouseOutFunc()"
+                ></i>
+                <div
+                  class="active-cont"
+                  id="active-cont"
+                  onmouseover="mouseOverFunc()"
+                  onmouseout="mouseOutFunc()"
+                >
+                  <p class="online" onclick="activeClickFunc('active')">
+                    Online
+                  </p>
+                  <p class="offline" onclick="activeClickFunc('offline')">
+                    Offline
+                  </p>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <section class="store-sec">
+          <div class="left-nav">
+            <ul class="ln-ul">RECOMMENDED
+              <li class="ln-li"><i class="fas fa-user-friends ln-li-icons"></i>By Friends</li>
+              <li class="ln-li"><i class="fas fa-users ln-li-icons"></i>By Curators</li>
+              <li class="ln-li"><i class="fas fa-tag ln-li-icons"></i>By Tags</li>
+            </ul>
+            <ul class="ln-ul">DISCOVERY QUEUES
+              <li class="ln-li"><i class="fas fa-comments ln-li-icons"></i>Recommendations</li>
+              <li class="ln-li"><i class="fas fa-comment-medical ln-li-icons"></i>New Releases</li>
+            </ul>
+            <ul class="ln-ul">BROWSE CATEGORIES
+              <li class="ln-li"><i class="fas fa-chart-line ln-li-icons"></i>Top Sellers</li>
+              <li class="ln-li"><i class="fas fa-plus ln-li-icons"></i>New Releases</li>
+              <li class="ln-li"><i class="far fa-clock ln-li-icons"></i>Up Coming</li>
+              <li class="ln-li"><i class="fas fa-percent ln-li-icons"></i>Specials</li>
+              <li class="ln-li"><i class="fas fa-vr-cardboard ln-li-icons"></i>Virtial Reality</li>
+              <li class="ln-li"><i class="fas fa-gamepad ln-li-icons"></i>Controller Friendly</li>
+            </ul>
+            <ul class="ln-ul">BROWSE BY GENRE
+              <li class="ln-li">Free To Play</li>
+              <li class="ln-li">Early Access</li>
+              <li class="ln-li">Action</li>
+              <li class="ln-li">Adventure</li>
+              <li class="ln-li">Casual</li>
+              <li class="ln-li">Indie</li>
+              <li class="ln-li">Massively Multiplayer</li>
+              <li class="ln-li">Racing</li>
+              <li class="ln-li">RPG</li>
+              <li class="ln-li">Simulation</li>
+              <li class="ln-li">Sport</li>
+              <li class="ln-li">Strategy</li>
+            </ul>            
+          </div>
+          <div class="store-part">
+            <div class="store-nav">
+              <ul class="st-ul">
+                <li class="st-li">Your Store</li>
+                <li class="st-li">Categories</li>
+                <li class="st-li">News</li>
+                <li class="st-li">Lab</li>
+              </ul>
+              <form class="search-form-st">
+                <input
+                  type="search"
+                  name="search"
+                  id="search-st"
+                  class="search-st"
+                  placeholder="Searching games..."
+                />
+              </form>
+              <i class="fas fa-search search-icon-st"></i>
+            </div>
+          </div>
+        </section>
+        <footer class="store-footer footer">
+          <p class="copyright">&copy;&nbsp;Zura Japoshvili</p>
+          <div class="footer-icons">
+            <a href="#"><i class="fab fa-github github-icon"></i></a>
+            <a href="#"><i class="fab fa-linkedin linkedin-icon"></i></a>
+          </div>
+        </footer>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/store_script.js"></script>
+  </body>
+</html>
