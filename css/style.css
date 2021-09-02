@@ -124,7 +124,7 @@ body {
 .slider-item-btn-cont{
   position: absolute;
   z-index: 2;
-  top: 50%;
+  top: 65%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -161,14 +161,47 @@ body {
 .slider-game-info{
   position: absolute;
   z-index: 2;
-  bottom: 0;
-  right: 0;
-  width: 200px;
-  height: 40%;
-  background-color: #9471d62a;
+  width: 400px;
+  height: 250px;
+  background-color: #9471d6c2;
   border-radius: 8px;
   display: flex;
-  flex-direction: column;
+  top: 20%;
+  left: 30%;
+  border-radius: 12px;
+}
+.price-store{
+  margin-left: 15px;
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid white;
+}
+.st-price{
+  color: #f8e262 !important;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+.st-store{
+  padding: 5px 12px;
+  background-color: #488b48;
+  padding: 4px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.st-store:hover{
+  background-color: #0b8a0b;
+  color: #f15bf1;
+}
+.sgi-img img{
+  height: 250px;
+  border-radius: 12px;
+}
+.sgi-info{
+  position: relative;
 }
 .rd{
   margin-top: 20px;
