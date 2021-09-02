@@ -106,28 +106,33 @@ body {
 }
 .at-slider {
   width: 90%;
-  height: 100%;
+  height: 90%;
   display: flex;
   align-items: center;
   position: relative;
+  box-shadow: 0px 0px 30px 0px #695796;
+  border-radius: 12px;
 }
 .slider-item {
   position: relative;
   z-index: 1;
   width: 90vw;
   height: 90vh;
+  border-radius: 12px;
+
 }
 .slider-item-btn-cont{
   position: absolute;
   z-index: 2;
   top: 50%;
-  left: 45%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .slider-item-btn-cont a{
   padding: 9px 21px;
   border-radius: 10px;
   transition-duration: 0.5s;
-  position: absolute;
   white-space: nowrap;
 }
 .st-page{
@@ -198,7 +203,8 @@ body {
 }
 .slide-img {
   width: 100%;
-  height: 100%;
+  height: 100%;  
+  border-radius: 12px;
 }
 .slider-for{
   width: 100%;
@@ -415,6 +421,11 @@ li.slick-active button:before {
   justify-content: space-around;
   width: 100%;
   height: 100%;
+}
+.burger-icon-l{
+  font-size: 30px;
+  color: #944bd8;
+  display: none;
 }
 .nav-ul {
   width: 40%;
@@ -734,6 +745,17 @@ li.slick-active button:before {
   flex-direction: column;
   margin-left: 10px;
 }
+.show-games{
+  color: #fff;
+  padding: 8px 15px;
+  background-color: #312655;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 8px;
+  display: none;
+
+}
 .ab-g-name {
   color: #fff;
   font-size: 28px;
@@ -761,6 +783,8 @@ li.slick-active button:before {
   background-color: #6143f2;
   border-radius: 6px;
   color: #fff;
+  display: flex;
+  align-items: center;
 }
 .cog-icon {
   background-color: #312655;
@@ -776,6 +800,7 @@ li.slick-active button:before {
   left: 40px;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 }
 .gn-ul {
   width: 60%;
@@ -790,6 +815,7 @@ li.slick-active button:before {
   border-radius: 5px;
   transition-duration: 0.5s;
   cursor: pointer;
+  white-space: nowrap;
 }
 .gn-li:hover {
   color: #fff;
@@ -946,7 +972,45 @@ li.slick-active button:before {
   }
 }
 
-
+@media screen and (max-width: 1300px) {
+  .recently-cont{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .achievements{
+    height: 170px;
+  }
+  .friends-wp{
+    height: 240px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .gn-li {
+    padding: 4px 14px;
+    border-radius: 5px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .aside-cont{
+    transform: translateX(-100%);
+    transition-duration: 0.3s;
+    position: absolute;
+    z-index: 10;
+    width: 200px;
+  }
+  .aside-cont-show{
+    transform: translateX(0);
+  }
+  .game-content{
+    width: 100%;
+    position: absolute;
+    left: 0;
+  }
+  .show-games{
+    display: flex;
+  }
+}
 @media  screen and (max-width: 960px) {
   .nav-ul{
     display: none;
@@ -958,6 +1022,68 @@ li.slick-active button:before {
   .burger-icon{
     display: flex !important;
   }
+  .burger-icon-l {
+    display: flex;
+  }
+  .nav-icons{
+    width: 250px;
+  }
+  .gn-ul{
+    width: 90%;
+  }
+
+}
+@media screen and (max-width: 800px) {
+  .achievements{
+    display: flex;
+    flex-direction: column;
+  }
+  .ach-p-part{
+    position: static;
+    margin: 10px 0 10px 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .recently-played,.active-player{
+    width: 30px;
+    height: 30px;
+  }
+  .gn-ul{
+    width: 100%;
+  }
+  .slider-for{
+    height: unset;
+  }
+}
+@media screen and (max-width: 600px) {
+  .game-info{
+    height: 170px;
+    margin-top: 20px;
+  }
+  .game-mp{
+    margin-top: 20px;
+    width: 150px;
+    height: 170px;
+  }
+  .ab-g-name{
+    font-size: 22px;
+  }
+  .game-info p{
+    font-size: 14px;
+  }
+  .play-button{
+    padding: 8px 30px; 
+  }
+  .game-slides{
+    width: 50%;
+  }
+  .g-fa-cont{
+    margin: 0;
+    width: 45%;
+  }
+  .game-nav{
+    height: 40px;
+  }
 }
 @media screen and (max-width: 500px) {
   .auth-cont{
@@ -967,5 +1093,39 @@ li.slick-active button:before {
   .footer-icons{
     right: 20px;
     font-size: 20px;
+  }
+  .gn-li{
+    padding: 3px 8px;
+    font-size: 10px;
+  }
+  .ab-g-content{
+    height: 360px;
+  }
+  .ab-g-content,.game-mp{
+    margin-left: 20px;
+  }
+  .game-nav{
+    left: 20px;
+  }
+  .recently-played,.active-player{
+    width: 20px;
+    height: 20px;
+  }
+  .friends-wp{
+    height: 180px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .gn-li{
+    font-size: 8px;
+  }
+  .ab-g-name{
+    font-size: 18px;
+  }
+  .game-info p{
+    font-size: 10px;
+  }
+  .play-button{
+    padding: 7px 25px; 
   }
 }

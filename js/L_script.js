@@ -30,12 +30,29 @@ ag_arrow.addEventListener("click", function () {
   ag_list.classList.toggle("dn");
 });
 
+const showGames = document.querySelector(".show-games");
+const aside_cont = document.querySelector(".aside-cont");
+const side_nav = document.getElementById("side-nav");
+showGames.addEventListener("click",function(){
+  aside_cont.classList.toggle("aside-cont-show");
+});
+
+const burger_icon = document.querySelector(".burger-icon-l");
+const active_burger = document.getElementById("active-burger");
+burger_icon.addEventListener("click", function(){
+  side_nav.classList.add("side-nav-active");
+  burger_icon.style.visibility = "hidden";
+});
+active_burger.addEventListener("click", function(){
+  side_nav.classList.remove("side-nav-active");
+  burger_icon.style.visibility = "visible";
+});
 
 
 $('.slider-for').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
-  arrows: true,
+  arrows: false,
   fade: true,
   asNavFor: '.slider-nav'
 });
@@ -43,7 +60,7 @@ $('.slider-nav').slick({
   slidesToShow: 2,
   slidesToScroll: 1,
   asNavFor: '.slider-for',
-  dots: true,
+  dots: false,
   centerMode: true,
   focusOnSelect: true,
   arrows: false
