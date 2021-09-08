@@ -37,6 +37,7 @@ $('.multiple-items').slick({
   arrows: true,
   autoplay: true,
   autoplaySpeed: 2000,
+  dots: true,
   responsive: [
     {
       breakpoint: 1024,
